@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  width: 270px;
+  left: -271px;
+  height: 100%;
+  background: #FFFFFF;
+  transition: all .5s ease;
+  border-right: solid 1px #5F6062;
+  
+}
+
+
+.storelocation{
+  font-size: 20px;
+  color: white;
+  line-height: 54px;
+  text-align: center;
+  background: #4C4C4C;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.storelocation > img{
+    position: absolute;
+    width: 11%;
+    top: 11px;
+    left: 30px;
+    
+}
+
+
+.sidebar a{
+  display: block;
+  height: 70px;
+  width: 100%;
+  color: #4C4C4C;
+  line-height: 65px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 7px;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+
+
+}
+
+
+.sidebar > ul > li > ul > li:hover{
+  border-left: 5px solid #EC7E14;
+  color: #EC7E14;
+}
+
+
+.sidebar a img{
+  position: relative;
+  width: 30%;
+  right: 20px;
+}
+
+
+.sidebar a p{
+  position: relative;
+  bottom: 94px;
+  left: 70px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+}
+
+
+#check{
+  display: none;
+}
+
+
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: #EC7E14;
+  border-radius: 5px;
+  border: 1px solid #EC7E14;
+  margin: 4px 4px;
+  font-size: 29px;
+  background: #FFFFFF;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+
+
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+
+
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+#check:checked ~ label #cancel{
+  margin-left: 271px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+

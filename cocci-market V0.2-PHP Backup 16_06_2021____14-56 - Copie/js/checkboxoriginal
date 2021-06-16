@@ -1,0 +1,168 @@
+
+var flecheViandes = document.getElementById("flecheViandes");
+var menuViandes = document.getElementById("menuViandes");
+
+var flecheFrais = document.getElementById("flecheFrais");
+var menuFrais = document.getElementById("menuFrais");
+
+var main = document.getElementById("main");
+var mainNormalWidth = main.offsetWidth;
+var mainWidthMenuOpen = mainNormalWidth - 270;
+var mainWidthMenuOpenPX = mainWidthMenuOpen + "px";
+var mainNormalWidthPX = mainNormalWidth + "px";
+
+
+var flecheDesactive = 0 + "deg";
+var flecheActive = 180 + "deg";
+
+
+var secondMenuPaddingTop = document.getElementById("secondMenu");
+
+var secondMenuPaddingTopPX = "28px"
+
+
+var checkMenu = document.getElementById("check");
+
+var checkViandes = document.getElementById("checkViandes");
+var checkFrais = document.getElementById("checkFrais");
+
+
+
+function ActiveUnderMenu(menuId) {
+
+    var menuNumber = menuId;
+
+
+    if (menuNumber == 0 && checkMenu.checked == false) {
+
+        main.style.marginLeft = "270px";
+        main.style.width = mainWidthMenuOpenPX;
+
+    } 
+    
+    if (menuNumber == 0 && checkMenu.checked == true) {
+
+        main.style.marginLeft = "0px";
+        main.style.width = mainNormalWidthPX;
+    }
+
+    if (menuNumber == 10) {
+
+        main.style.marginLeft = "0px";
+        main.style.width = mainNormalWidthPX;
+    }
+
+
+    if(menuNumber == 1 && checkViandes.checked == true ){
+
+        checkFrais.checked = false;
+        
+        flecheViandes.style.rotate = flecheActive;
+        menuViandes.style.display = "block"; 
+        secondMenuPaddingTop.style.paddingTop = secondMenuPaddingTopPX;
+
+
+
+    } else {
+        
+        flecheViandes.style.rotate = flecheDesactive;
+        menuViandes.style.display = "none";
+        secondMenuPaddingTop.style.paddingTop = "0";
+    }
+
+
+
+
+    if(menuNumber == 2 && checkFrais.checked == true ){
+
+        checkViandes.checked = false;
+        
+        flecheFrais.style.rotate = flecheActive;
+        menuFrais.style.display = "block";
+
+        
+
+    } else {
+        
+        flecheFrais.style.rotate = flecheDesactive;
+        menuFrais.style.display = "none";
+        
+
+    }
+
+
+};
+
+
+
+
+
+
+
+var menu01 = document.getElementById("menu01");
+var menu02 = document.getElementById("menu02");
+var menu03 = document.getElementById("menu03");
+var menu04 = document.getElementById("menu04");
+var menu05 = document.getElementById("menu05");
+var menu06 = document.getElementById("menu06");
+var menu07 = document.getElementById("menu07");
+var menu08 = document.getElementById("menu08");
+var menu09 = document.getElementById("menu09");
+var menu10 = document.getElementById("menu10");
+var menu11 = document.getElementById("menu11");
+var menu12 = document.getElementById("menu12");
+
+
+
+
+
+
+var fleche01 = document.getElementById("fleche01");
+var fleche02 = document.getElementById("fleche02");
+var fleche03 = document.getElementById("fleche03");
+var fleche04 = document.getElementById("fleche04");
+var fleche05 = document.getElementById("fleche05");
+var fleche06 = document.getElementById("fleche06");
+var fleche07 = document.getElementById("fleche07");
+var fleche08 = document.getElementById("fleche08");
+var fleche09 = document.getElementById("fleche09");
+var fleche10 = document.getElementById("fleche10");
+var fleche11 = document.getElementById("fleche11");
+var fleche12 = document.getElementById("fleche12");
+
+
+
+
+$(function () {
+    $('form').on('submit', function (e) {
+        //----------NE MODIFIEZ PAS LE CODE AU DESSUS DE CETTE LIGNE, IL SERA REINITIALISE LORS DE l'EXECUTION----------
+        
+        var inputTitle = document.getElementById("inputTitle");
+        
+        
+        console.log(inputTitle.em);
+        
+        //----------NE MODIFIEZ PAS LE CODE EN DESSOUS DE CETTE LIGNE, IL SERA REINITIALISE LORS DE l'EXECUTION----------
+    });
+    
+});
+
+
+
+
+
+$(function () {
+    $('form').on('submit', function (e) {
+        //----------NE MODIFIEZ PAS LE CODE AU DESSUS DE CETTE LIGNE, IL SERA REINITIALISE LORS DE l'EXECUTION----------
+        
+        var inputTitle = document.getElementById("inputTitle");
+        
+        
+        if(empty(inputTitle)) {
+            
+        }
+        
+        //----------NE MODIFIEZ PAS LE CODE EN DESSOUS DE CETTE LIGNE, IL SERA REINITIALISE LORS DE l'EXECUTION----------
+    });
+    
+});

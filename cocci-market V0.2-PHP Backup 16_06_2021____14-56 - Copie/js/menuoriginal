@@ -1,0 +1,142 @@
+<ul>
+
+        <li>
+          <input type="checkbox" onclick = "ActiveUnderMenu(1)" name="checkViandes" id="checkViandes">
+          <label for="checkViandes">
+            <div>
+              <img class="imageRayon" src="image/viandes.png" alt="">
+              <p>Rayon Viandes</p>
+              <img id="flecheViandes" class="fleche" src="image/fleche.svg" alt="">
+            </div>
+
+          </label> 
+
+          <ul id="menuViandes">
+
+            <li>
+              <div>
+                <a href="#" onclick = "itemCategorieSelect(6)">viandes</a>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <a href="#" onclick = "itemCategorieSelect(15)">frais</a>
+              </div>
+            </li>
+
+            <li>
+              <div id="lastLigne">
+                <a href="#4">surgeler</a>
+              </div>
+            </li>
+
+          </ul>
+
+        </li>
+
+       </ul>
+
+
+
+
+       
+       <ul id="secondMenu">
+
+        <li>
+          <input type="checkbox" onclick = "ActiveUnderMenu(2)" name="checkFrais" id="checkFrais">
+          <label for="checkFrais">
+            <div>
+              <img class="imageRayon" src="image/frais.png" alt="">
+              <p>Rayon Frais</p>
+              <img id="flecheFrais" class="fleche" src="image/fleche.svg" alt="">
+            </div>
+
+          </label> 
+
+          <ul id="menuFrais">
+
+            <li><a href="#2">viandes</a></li>
+            <li><a href="#3">frais</a></li>
+            <li><a href="#4">surgeler</a></li>
+
+          </ul>
+
+        </li>
+
+       </ul>
+
+
+
+
+
+
+
+
+
+
+  underMenu1Name varchar(50) DEFAULT NULL,
+    
+  underMenu1Categorie int(50) DEFAULT NULL,
+
+  underMenu2Name varchar(50) DEFAULT NULL,
+    
+  underMenu2Categorie int(50) DEFAULT NULL,
+
+  underMenu3Name varchar(50) DEFAULT NULL,
+    
+  underMenu3Categorie int(50) DEFAULT NULL,
+
+  underMenu4Name varchar(50) DEFAULT NULL,
+    
+  underMenu4Categorie int(50) DEFAULT NULL,
+
+  underMenu5Name varchar(50) DEFAULT NULL,
+    
+  underMenu5Categorie int(50) DEFAULT NULL,
+
+  underMenu6Name varchar(50) DEFAULT NULL,
+    
+  underMenu6Categorie int(50) DEFAULT NULL,
+
+  underMenu7Name varchar(50) DEFAULT NULL,
+    
+  underMenu7Categorie int(50) DEFAULT NULL,
+
+  underMenu8Name varchar(50) DEFAULT NULL,
+    
+  underMenu8Categorie int(50) DEFAULT NULL,
+
+  underMenu9Name varchar(50) DEFAULT NULL,
+    
+  underMenu9Categorie int(50) DEFAULT NULL,
+
+  underMenu10Name varchar(50) DEFAULT NULL,
+    
+  underMenu10Categorie int(50) DEFAULT NULL,
+
+  underMenu11Name varchar(50) DEFAULT NULL,
+    
+  underMenu11Categorie int(50) DEFAULT NULL,
+
+  underMenu12Name varchar(50) DEFAULT NULL,
+    
+  underMenu12Categorie int(50) DEFAULT NULL,
+
+  underMenu13Name varchar(50) DEFAULT NULL,
+    
+  underMenu13Categorie int(50) DEFAULT NULL,
+
+  underMenu14Name varchar(50) DEFAULT NULL,
+    
+  underMenu14Categorie int(50) DEFAULT NULL,
+
+  underMenu15Name varchar(50) DEFAULT NULL,
+    
+  underMenu15Categorie int(50) DEFAULT NULL,
+
+
+
+
+  
+

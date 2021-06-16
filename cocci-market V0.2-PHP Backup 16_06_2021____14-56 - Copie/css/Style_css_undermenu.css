@@ -1,0 +1,86 @@
+.sidebar  ul  li {
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+    color: #4C4C4C;
+    line-height: 65px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(95, 96, 98, 0.555);
+    border-left: 2px solid transparent;
+    border-bottom-right-radius: 7px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  
+  }
+  
+  
+  .sidebar > ul > li > input {
+  
+    display: none;
+  
+  }
+  
+  
+  .sidebar > ul > li > label {
+    display: inline-block;
+    max-width: 270px;
+    height: 70px;
+  
+  }
+  
+  
+  .sidebar > ul > li > label > div {
+    max-width: 270px;
+    height: 70px;
+    display: grid;
+    grid: 55px, 195px, 20px;
+    grid-template-rows: minmax(70px);
+    cursor: pointer;
+  
+  
+  }
+  
+  .sidebar > ul > li > label > div > p {
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  
+  .imageRayon {
+    width: 55px;
+    margin: 7px 0 0 0px;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  
+  .fleche {
+    width: 20px;
+    margin: 23px 5px 0 0px; 
+    grid-row: 1;
+    grid-column: 3; 
+    transition: all .2s ease;
+  }
+  
+  
+  .sidebar > ul > li > ul {
+    margin-top: -20px;
+    display: none;
+  
+  }
+
+  
+  .sidebar > ul > li > ul > li > div {
+    max-width: 270px;
+    height: 70px;
+    display: grid;
+    grid: 55px, 195px, 20px;
+    grid-template-rows: minmax(70px);
+    cursor: pointer;
+  
+  
+  }
+
+
+  
